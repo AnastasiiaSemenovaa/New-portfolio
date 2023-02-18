@@ -5,14 +5,20 @@ body {
 }
 h1 {
   font-size: 20px;
+  font-weight: 200;
 }
 h2 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 400;
   font-family: "Rubik Mono One", sans-serif;
 }
 h3 {
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.skills {
+  list-style: none;
+  text-align: center;
 }
 
 :root {
@@ -24,9 +30,10 @@ h3 {
   background: var(--background);
   border: none;
   padding: 20px 20px;
-  margin: 10px 10px;
+  margin: 60px 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   color: brown;
+  font-weight: 550;
 }
 .name {
   color: var(--primary-color);
@@ -39,33 +46,26 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-.styleName {
-  font-size: 20px;
-  font-family: "Rubik Mono One", sans-serif;
-}
-.weatherName {
-  font-size: 20px;
-  font-family: "Rubik Mono One", sans-serif;
-}
+
 .row {
   margin: 20px 5px;
 }
 .project {
   display: block;
-  background: var(--background);
+  background: rgb(232, 241, 255);
   color: brown;
   border: none;
   margin: 0 auto;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .linkWork {
   text-decoration: none;
 }
 
-.border-light {
+/* .border-light {
   border-color: pink !important;
-}
+} */
 #my-email {
   text-decoration: none;
   color: rgb(39, 3, 3);
@@ -74,15 +74,7 @@ h3 {
 .mainBody {
   margin-top: 100px;
 }
-.about-page h1 {
-  font-size: 38px;
-  margin-bottom: 25px;
-}
-.about-page h2 {
-  font-size: 30px;
-  font-family: "Lexend Exa", sans-serif;
-  margin-bottom: 15px;
-}
+
 .contactMain {
   font-family: "Lexend Exa", sans-serif;
   font-size: 20px;
@@ -92,7 +84,7 @@ h3 {
   font-size: 25px;
   text-align: center;
   font-family: "Rubik Mono One", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .contactMain h2,
 h3,
@@ -101,6 +93,7 @@ h4 {
   font-size: 20px;
   font-weight: bold;
   line-height: 2;
+  margin-top: 20px;
 }
 .contactMain a {
   text-decoration: none;
@@ -138,6 +131,19 @@ footer i {
   color: blueviolet;
   padding: 20px;
 }
+
+.navbar {
+  background: #f4b099;
+}
+.work {
+  padding: 70px 20px;
+}
+.btn-branding {
+  border: 1px solid black;
+}
+.btn-branding:hover {
+  background: #f4dbd2;
+}
 @media (max-width: 600px) {
   .styleSite,
   .weatherSite {
@@ -162,16 +168,4 @@ footer i {
   footer h1 {
     font-size: 13px;
   }
-}
-.navbar {
-  background: #f69c7e;
-}
-.work {
-  padding: 70px 20px;
-}
-.btn-branding {
-  border: 1px solid black;
-}
-.btn-branding:hover {
-  background: #f4dbd2;
 }
