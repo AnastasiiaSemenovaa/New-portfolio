@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: "Lexend Exa", sans-serif;
-  background: #fef9f8;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 h1 {
   font-size: 20px;
@@ -48,24 +48,33 @@ h3 {
 }
 
 .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 20px 5px;
 }
 .project {
   display: block;
-  background: rgb(232, 241, 255);
-  color: brown;
+  background: #fff;
+  /* background: rgb(247, 243, 233); */
+  color: rgb(130, 33, 33);
   border: none;
+  font-weight: bold;
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 5px;
+  transition: 0.3s;
+}
+.project:hover {
+  background-color: #b9684d;
+  color: #fff;
 }
 .linkWork {
   text-decoration: none;
 }
-
-/* .border-light {
-  border-color: pink !important;
-} */
+.myPicture {
+  display: block;
+}
 #my-email {
   text-decoration: none;
   color: rgb(39, 3, 3);
@@ -79,6 +88,8 @@ h3 {
   font-family: "Lexend Exa", sans-serif;
   font-size: 20px;
   line-height: 1;
+  background: #fff;
+  display: block;
 }
 .contactMain h1 {
   font-size: 25px;
@@ -102,10 +113,25 @@ h4 {
 .contactMain a:hover {
   color: rgb(183, 11, 183);
 }
+.contactBody {
+  background: #fff;
+}
+.contactImg {
+  padding-top: 100px;
+  display: block;
+  margin: 0 auto;
+}
 .workPage h1 {
   font-size: 30px;
   text-align: center;
   font-family: "Rubik Mono One", sans-serif;
+}
+.workBlock {
+  display: block ;
+  margin-bottom: 30px;
+}
+.workText {
+  text-align: justify;
 }
 footer {
   margin-bottom: 20px;
@@ -128,12 +154,15 @@ footer i {
 
 .code {
   text-decoration: none;
-  color: blueviolet;
   padding: 20px;
 }
-
 .navbar {
-  background: #f4b099;
+  font-weight: 600;
+  background: linear-gradient(to bottom, #dfe9f3 0%, white 100%);
+}
+.navbar .active {
+  font-weight: bolder;
+  text-decoration: underline;
 }
 .work {
   padding: 70px 20px;
@@ -143,6 +172,11 @@ footer i {
 }
 .btn-branding:hover {
   background: #f4dbd2;
+}
+@media (max-width: 900px) {
+.myPicture {
+    width: 400px;
+  }
 }
 @media (max-width: 600px) {
   .styleSite,
@@ -156,13 +190,18 @@ footer i {
   h3 {
     font-size: 20px;
   }
-  .my-picture {
-    display: none;
+  .name {
+    padding-top: 30px;
+  }
+  .myPicture {
+    width: 300px;
+    margin-top: 80px;
   }
   .contactMain {
     font-size: 12px;
   }
   footer {
+    margin-top: 10px;
     font-size: 12px;
   }
   footer h1 {
